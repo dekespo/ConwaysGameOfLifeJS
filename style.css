@@ -1,0 +1,28 @@
+body
+{
+    text-align: center;
+}
+
+.mainBackground
+{
+	background-color: grey;
+}
+
+.canvasBackground
+{
+    background: white;
+}
+
+@media (max-width: 1000px)
+{
+	.canvasBackground
+	{
+		width: 100%;
+	}
+}
+
+.canvasAround
+{
+	overflow: hidden;
+	padding: 10px;
+}
