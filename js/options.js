@@ -7,12 +7,15 @@ function buttonRun()
 function buttonStop()
 {
 	ACTIVATED = false;
+	animate();
 }
 
 function buttonClear()
 {
 	GRID_POSITIONS = {};
+	ACTIVATED = false;
 	redraw();
+	animate();
 }
 
 function getSizeInput()
@@ -40,15 +43,15 @@ function gridCheckBox()
 function getSpeedInput()
 {
 	ACTIVATED = false;
-	var setSpeed = parseInt(document.getElementById("speedInput").value);
-	if(!isNaN(setSpeed) && setSpeed > 0)
+	setMINIMUM_ANIMATION_SPEED = parseInt(document.getElementById("speedInput").value);
+	if(!isNaN(setMINIMUM_ANIMATION_SPEED) && setMINIMUM_ANIMATION_SPEED > 0)
 	{
-		ANIMATION_SPEED = setSpeed;
+		ANIMATION_SPEED = setMINIMUM_ANIMATION_SPEED;
 		ACTIVATED = true;
 		animate();
 	}
 	else
 	{
-		document.getElementById("speedInput").value = MINIMUM_SIZE;
+		document.getElementById("speedInput").value = ANIMATION_SPEED;
 	}
 }

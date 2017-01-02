@@ -1,6 +1,6 @@
 var isInsideTheBoard = function(pos)
 {
-	if(pos.x > -1 && pos.x < FINAL_SIZES.width && pos.y > -1 && pos.y < FINAL_SIZES.height)
+	if(pos.x > -1 && pos.x < FINAL_SIZES.width / MINIMUM_SIZE && pos.y > -1 && pos.y < FINAL_SIZES.height / MINIMUM_SIZE)
 		return true;
 	return false;
 };

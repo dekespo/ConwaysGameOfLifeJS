@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title> CONWAY'S GAME OF LIFE HTML CANVAS GAME </title>
+		<title> CONWAY'S GAME OF LIFE HTML CANVAS UI </title>
 		<link rel="stylesheet" href="style.css"/>
 		<script type="text/javascript" src="js/main.js"> </script>
 		<script type="text/javascript" src="js/initialization.js"> </script>
@@ -20,9 +20,9 @@
 			</canvas>
 		</div>
 		<script> main() </script> 
-		<button onclick="buttonRun()">Start</button>
-		<button onclick="buttonStop()">Stop</button>
-		<button onclick="buttonClear()">Clear</button>
+		<button id="startButton" onclick="buttonRun()">Start</button>
+		<button id="stopButton" onclick="buttonStop()" disabled>Stop</button>
+		<button id="clearButton" onclick="buttonClear()" disabled>Clear</button>
 		<p> Click left to put a cell inside the canvas <br>
 		Click right to remove a cell from the canvas</p>
 		<form>

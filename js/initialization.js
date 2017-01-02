@@ -12,7 +12,7 @@ function loadGlobalVariables()
 	};
 	FINAL_SIZES = localComplyThePositionsToMinimumSize(FINAL_SIZES);
 	ACTIVATED = false;
-	ANIMATION_SPEED = 500;
+	ANIMATION_SPEED = setMINIMUM_ANIMATION_SPEED || 500;
 	SHOW_GRID = true;
 	GRID_POSITIONS = {};
 }

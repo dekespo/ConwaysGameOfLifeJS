@@ -3,6 +3,7 @@ function main()
 {
 	// Start
 	setMINIMUM_SIZE = null;
+	setMINIMUM_ANIMATION_SPEED = null;
 	initialize();
 
 	// Mouse event
